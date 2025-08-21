@@ -5,7 +5,7 @@ export const Header = () => {
     <header className="flex justify-between items-center mb-8">
       <div className="flex items-center space-x-3">
         <span className="material-icons text-4xl gradient-text">waves</span>
-        <h1 className="text-3xl font-bold gradient-text">MolDrix</h1>
+        <h1 className="text-3xl font-bold logo-gradient">MoldRix<span className="text-sm align-super ml-1">™</span></h1>
       </div>
       
       <div className="flex items-center space-x-4">
