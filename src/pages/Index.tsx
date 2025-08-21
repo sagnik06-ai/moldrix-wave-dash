@@ -18,7 +18,7 @@ const Index = () => {
       className="min-h-screen bg-cover bg-center bg-fixed"
       style={{ backgroundImage: `url(${waveBackground})` }}
     >
-      <div className="min-h-screen bg-primary/20 backdrop-blur-sm">
+      <div className="min-h-screen bg-primary/40 backdrop-blur-xl">
         <div className="p-8">
           <Header />
           
