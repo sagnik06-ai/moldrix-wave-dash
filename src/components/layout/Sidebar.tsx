@@ -20,7 +20,7 @@ const navItems: NavItem[] = [
 
 export const Sidebar = () => {
   return (
-    <div className="w-64 space-y-2">
+    <div className="w-full space-y-2">
       {navItems.map((item) => (
         <div
           key={item.id}
