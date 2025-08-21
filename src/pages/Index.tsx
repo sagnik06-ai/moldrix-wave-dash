@@ -10,15 +10,15 @@ import { MetricsOverviewCard } from "@/components/dashboard/MetricsOverviewCard"
 import { RecommendationsCard } from "@/components/dashboard/RecommendationsCard";
 import { ProgressCircle } from "@/components/ui/progress-circle";
 import { GlassCard } from "@/components/ui/glass-card";
-import backgroundImage from "@/assets/moldrix-bg.jpg";
+const waveBackground = "/lovable-uploads/dcc924bd-fae8-4e21-9077-9945d7579408.png";
 
 const Index = () => {
   return (
     <div 
       className="min-h-screen bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(${waveBackground})` }}
     >
-      <div className="min-h-screen bg-black/60 backdrop-blur-sm">
+      <div className="min-h-screen bg-primary/20 backdrop-blur-sm">
         <div className="p-8">
           <Header />
           

@@ -8,53 +8,53 @@
 
 @layer base {
   :root {
-    /* Base Colors */
-    --background: 220 15% 7%;
-    --foreground: 210 40% 98%;
+    /* Base Colors - Grey and White Theme */
+    --background: 220 8% 15%;
+    --foreground: 0 0% 98%;
 
     /* Glass morphism effects */
-    --glass-background: 0 0% 100% / 0.1;
-    --glass-border: 0 0% 100% / 0.2;
-    --glass-hover: 0 0% 100% / 0.15;
+    --glass-background: 0 0% 100% / 0.08;
+    --glass-border: 0 0% 100% / 0.15;
+    --glass-hover: 0 0% 100% / 0.12;
 
-    /* Brand Colors */
-    --primary: 217 91% 60%;
+    /* Brand Colors - Dark Blue Accents */
+    --primary: 220 40% 25%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 217 100% 70%;
+    --primary-glow: 220 50% 35%;
 
-    --secondary: 240 100% 50%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 85%;
+    --secondary-foreground: 220 15% 15%;
 
-    --accent: 142 76% 36%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 90%;
+    --accent-foreground: 220 15% 15%;
 
     /* Status Colors */
-    --success: 142 76% 36%;
-    --warning: 38 92% 50%;
-    --error: 0 84% 60%;
+    --success: 142 45% 45%;
+    --warning: 38 85% 55%;
+    --error: 0 70% 50%;
 
     /* Surface Colors */
-    --card: 220 15% 10%;
-    --card-foreground: 210 40% 98%;
-    --card-glass: 0 0% 100% / 0.05;
+    --card: 220 10% 18%;
+    --card-foreground: 0 0% 95%;
+    --card-glass: 0 0% 100% / 0.03;
 
-    --muted: 220 15% 20%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 220 8% 25%;
+    --muted-foreground: 0 0% 65%;
 
     /* Interactive */
-    --border: 0 0% 100% / 0.1;
-    --input: 220 15% 15%;
-    --ring: 217 91% 60%;
+    --border: 0 0% 100% / 0.08;
+    --input: 220 10% 20%;
+    --ring: 220 40% 25%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(240 100% 50%));
-    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    --gradient-mesh: radial-gradient(ellipse at top, hsl(217 91% 60% / 0.3) 0%, transparent 50%),
-                      radial-gradient(ellipse at bottom right, hsl(240 100% 50% / 0.2) 0%, transparent 50%);
+    /* Gradients - Grey and White with Dark Blue */
+    --gradient-primary: linear-gradient(135deg, hsl(220 40% 25%), hsl(0 0% 85%));
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+    --gradient-mesh: radial-gradient(ellipse at top, hsl(220 40% 25% / 0.15) 0%, transparent 50%),
+                      radial-gradient(ellipse at bottom right, hsl(0 0% 85% / 0.05) 0%, transparent 50%);
 
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
-    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.37);
+    --shadow-glow: 0 0 30px hsl(220 40% 25% / 0.2);
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.25);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -78,15 +78,15 @@
   }
 
   .glass-morphism {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: var(--shadow-glass);
   }
 
   .glass-hover:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.12);
     transform: translateY(-2px);
     transition: var(--transition-smooth);
   }
